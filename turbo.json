@@ -1,0 +1,25 @@
+{
+	"$schema": "https://turbo.build/schema.json",
+	"globalDependencies": ["**/.env.*local"],
+	"tasks": {
+		"build": {
+			"env": ["NODE_ENV", "PORT", "SENTRY_DSN", "SENTRY_AUTH_TOKEN", "PUBLIC_CONSOLE_URL"],
+			"dependsOn": ["^build"],
+			"outputs": [".dist/**"]
+		},
+		"dev": {
+			"env": ["NODE_ENV", "PORT", "SENTRY_DSN", "SENTRY_AUTH_TOKEN", "PUBLIC_CONSOLE_URL"],
+			"dependsOn": ["^build"],
+			"cache": false
+		},
+		"type-check": {
+			"dependsOn": ["^build"]
+		},
+		"test": {
+			"dependsOn": ["^build"]
+		},
+		"clean": {
+			"cache": false
+		}
+	}
+}

@@ -1,0 +1,41 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.6.2/schema.json",
+	"files": {
+		"ignore": [".turbo", ".vercel", "test-results"]
+	},
+	"formatter": {
+		"enabled": true,
+		"lineWidth": 120,
+		"ignore": ["node_modules", ".astro", "dist", "meta"]
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"nursery": {
+				"useConsistentCurlyBraces": "warn"
+			},
+			"correctness": {
+				"noUnusedImports": "error"
+			}
+		},
+		"ignore": ["node_modules", ".astro", "dist", "meta"]
+	},
+	"organizeImports": {
+		"enabled": true,
+		"ignore": ["node_modules", ".astro", "dist"]
+	},
+	"overrides": [
+		{
+			"include": ["*.svelte", "*.astro", "*.vue"],
+			"linter": {
+				"rules": {
+					"style": {
+						"useConst": "off",
+						"useImportType": "off"
+					}
+				}
+			}
+		}
+	]
+}
