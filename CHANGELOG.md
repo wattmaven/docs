@@ -1,5 +1,12 @@
 # @wattmaven/docs
 
+## 0.2.2
+
+### Patch Changes
+
+- f95c3f6: Simplify deployment environment.
+- 6c10b20: Add button for editing pages.
+
 ## 0.2.1
 
 ### Patch Changes
