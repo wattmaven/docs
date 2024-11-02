@@ -20,6 +20,6 @@ export default typescriptEslint.config(
     ...typescriptEslint.configs.disableTypeChecked,
   },
   {
-    ignores: ["dist/", ".astro", ".vercel"],
+    ignores: ["dist/", ".astro/", ".vercel/"],
   },
 );
