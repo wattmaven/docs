@@ -1,0 +1,14 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "outDir": "dist"
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.js",
+    "**/*.mjs",
+    "**/*.astro",
+    ".prettierrc.mjs"
+  ],
+  "exclude": ["node_modules"]
+}
