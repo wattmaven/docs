@@ -74,7 +74,7 @@ your personal projects. **You can't delete this team.**
 ### When should I create a new team?
 
 The primary use case for creating a team is to collaborate with others on a shared set of projects. If you're working on
-a project with others, you should *probably* create a shared team.
+a project with others, you should _probably_ create a shared team.
 
 This is because teams provide their own billing settings and user management, making it easier to change these details
 later on if needed.

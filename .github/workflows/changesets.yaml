@@ -61,7 +61,7 @@ jobs:
           NPM_TOKEN: ${{ secrets.GH_PRIVATE_NPM_TOKEN }}
 
   deploy-production:
-    needs: [ version ]
+    needs: [version]
     if: needs.version.outputs.published == 'true'
     runs-on: ubuntu-latest
     environment: production
