@@ -1,12 +1,9 @@
 import { createEnv } from "@t3-oss/env-core";
-import { z } from "zod";
 
 export const clientEnv = createEnv({
 	clientPrefix: "PUBLIC_",
 
-	client: {
-		PUBLIC_CONSOLE_URL: z.string().url(),
-	},
+	client: {},
 
 	/**
 	 * What object holds the environment variables at runtime. This is usually

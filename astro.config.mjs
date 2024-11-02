@@ -9,7 +9,7 @@ import starlightLinksValidator from "starlight-links-validator";
 import { loadEnv } from "vite";
 
 // See https://docs.astro.build/en/guides/configuring-astro/#environment-variables.
-const { SENTRY_DSN, SENTRY_AUTH_TOKEN } = loadEnv(process.env.NODE_ENV ?? "development", process.cwd(), "");
+const { SENTRY_AUTH_TOKEN } = loadEnv(process.env.NODE_ENV ?? "development", process.cwd(), "");
 
 const sidebar = [
 	{
@@ -47,7 +47,7 @@ export default defineConfig({
 		}),
 		inoxToolsStarWarp(),
 		sentry({
-			dsn: SENTRY_DSN,
+			dsn: "https://22ce9feb5e26bdc9ebffe367ed206a1b@o4508094123278336.ingest.us.sentry.io/4508185879969792",
 			sourceMapsUploadOptions: {
 				project: "docs",
 				authToken: SENTRY_AUTH_TOKEN,

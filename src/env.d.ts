@@ -1,9 +1,8 @@
 /// <reference path="../.astro/types.d.ts" />
 /// <reference types="astro/client" />
 
-interface ImportMetaEnv {
-	readonly PUBLIC_CONSOLE_URL: string;
-}
+//biome-ignore lint/complexity/noBannedTypes: add variables here
+type ImportMetaEnv = {};
 
 interface ImportMeta {
 	readonly env: ImportMetaEnv;
