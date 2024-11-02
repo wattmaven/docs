@@ -40,6 +40,17 @@ export default defineConfig({
 			customCss: ["./src/tailwind.css"],
 			sidebar,
 			plugins: [starlightLinksValidator()],
+			// See https://starlight.astro.build/reference/configuration/#head.
+			head: [
+				{
+					tag: "script",
+					attrs: {
+						src: "https://cdn.usefathom.com/script.js",
+						"data-site": "MHITWYLQ",
+						defer: true,
+					},
+				},
+			],
 		}),
 		tailwind({
 			// Disable the default base styles.
