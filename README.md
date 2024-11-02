@@ -9,7 +9,7 @@ pnpm i -g vercel
 # Pull the environment information.
 VERCEL_PROJECT_ID=$VERCEL_DOCS_PROJECT_ID vercel pull --yes --environment=production --scope=wattmaven --token=$VERCEL_TOKEN
 
-# Copy the Vercel environment variables to the app directory.
+# Copy the Vercel environment variables.
 cp .vercel/.env.production.local .env.production.local
 
 # Build the project artifacts.
