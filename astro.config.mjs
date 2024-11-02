@@ -29,6 +29,9 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: "wattmaven",
+			editLink: {
+				baseUrl: "https://github.com/wattmaven/docs/edit/main/",
+			},
 			social: {
 				github: "https://github.com/wattmaven",
 			},
