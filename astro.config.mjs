@@ -19,8 +19,28 @@ const { SENTRY_AUTH_TOKEN } = loadEnv(
 
 const sidebar = [
   {
+    label: "Guides",
+    items: [
+      {
+        label: "Getting Started",
+        slug: "guides/getting-started",
+        badge: { text: "In Progress", variant: "caution" },
+      },
+      {
+        label: "Account Management",
+        items: [
+          {
+            label: "Deleting Your Account",
+            slug: "guides/deleting-your-account",
+          },
+        ],
+      },
+    ],
+  },
+  {
     label: "Concepts",
     items: [
+      { label: "Users", slug: "concepts/users" },
       { label: "Teams", slug: "concepts/teams" },
       { label: "Projects", slug: "concepts/projects" },
     ],
