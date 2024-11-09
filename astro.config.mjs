@@ -33,6 +33,10 @@ const sidebar = [
             label: "Deleting Your Account",
             slug: "guides/deleting-your-account",
           },
+          {
+            label: "Restoring Your Account",
+            slug: "guides/restoring-your-account",
+          },
         ],
       },
     ],
